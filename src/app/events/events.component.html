@@ -1,0 +1,20 @@
+<!-- <h1>Events</h1>
+<ul>
+  <li *ngFor="let event of events">
+    <a (click)="onEventClick(event.id)">{{ event.title }}</a>
+  </li>
+</ul> -->
+
+
+<div class="card-container" >
+  <mat-card>
+    <mat-card-title >Current Events</mat-card-title>
+    <mat-card-content>
+      <mat-list *ngFor="let event of events" role="list">
+        <mat-list-item (click)="onEventClick(event.id)" role="listitem">{{event.title}}</mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
